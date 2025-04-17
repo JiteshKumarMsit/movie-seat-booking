@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Seat Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 Movie Seat Booking</h1>
+    <p id="date"></p>
+
+    <label for="movie">Select Movie:</label>
+    <select id="movie">
+      <option value="250">Tiger 3 (₹250)</option>
+      <option value="300">Animal (₹300)</option>
+      <option value="180">Fighter (₹180)</option>
+      <option value="350">Jawan (₹350)</option>
+    </select>
+
+    <label for="time">Select Timing:</label>
+    <select id="time">
+      <option value="10:00 AM">10:00 AM</option>
+      <option value="1:00 PM">1:00 PM</option>
+      <option value="4:00 PM">4:00 PM</option>
+      <option value="7:00 PM">7:00 PM</option>
+    </select>
+
+    <ul class="legend">
+      <li><span class="seat"></span> Available</li>
+      <li><span class="seat selected"></span> Selected</li>
+      <li><span class="seat occupied"></span> Booked</li>
+    </ul>
+
+    <div class="theater">
+      <div class="screen">SCREEN</div>
+      <div class="seat-container" id="seat-container"></div>
+    </div>
+
+    <p class="text">
+      You selected <span id="count">0</span> seat(s) — Total: ₹<span id="total">0</span>
+    </p>
+
+    <button id="payBtn">Pay Now</button>
+</div>
+
+<footer>
+  <p>Made by Jitesh Kumar</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
